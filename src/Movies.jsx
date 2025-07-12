@@ -6,7 +6,7 @@ function Movies() {
 
     useEffect(() => {
         async function getData() {
-            const response = await fetch(`https://www.omdbapi.com/?s=${key}&apikey=d73191f1`);
+            const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=38d3c65d`);
             const Data = await response.json();
             setData(Data.Search);
             console.log(Data);
